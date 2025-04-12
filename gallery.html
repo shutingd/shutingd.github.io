@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shuting Ding - Gallery</title>
+  <style>
+    /* 同上，复制相同的 CSS */
+    /* ... */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <h1>Gallery</h1>
+  <p>A collection of natural scenery and insects captured during fieldwork and personal exploration.</p>
+  <div class="gallery">
+    <img src="nature1.jpg" alt="Nature Photo 1">
+    <img src="nature2.jpg" alt="Nature Photo 2">
+    <img src="insect1.jpg" alt="Insect Photo 1">
+    <img src="insect2.jpg" alt="Insect Photo 2">
+  </div>
+</body>
+</html>
