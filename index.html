@@ -7,10 +7,11 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
       line-height: 1.6;
+      background-color: #fdfdfd;
     }
     h1, h2 {
       color: #2c3e50;
@@ -19,32 +20,80 @@
       color: #2980b9;
       text-decoration: none;
     }
-    .contact a {
-      margin-right: 15px;
+    a:hover {
+      text-decoration: underline;
     }
     .section {
       margin-top: 40px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 60px;
+      border: 2px solid #ddd;
+    }
+    .paper {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #fff;
+      margin-top: 15px;
+    }
+    .paper img {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      object-fit: cover;
+    }
+    .blog-list ul {
+      list-style-type: square;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Shuting Ding</h1>
-  <p>Visiting Scholar at University of Michigan, USA</p>
-
-  <div class="contact">
-    📍 <a href="https://umich.edu" target="_blank">Michigan USA</a><br>
-    ✉️ <a href="mailto:shutingdin@gmail.com">shutingdin@gmail.com</a><br>
-    🐦 <a href="https://x.com/ShutingDing" target="_blank">Twitter</a><br>
-    📚 <a href="https://scholar.google.com/citations?user=SIEl_I8AAAAJ" target="_blank">Google Scholar</a><br>
-    🧬 <a href="https://orcid.org/0000-0001-7541-3086" target="_blank">ORCID</a>
+  <!-- Header -->
+  <div class="profile">
+    <img src="avatar.jpg" alt="Shuting Ding">
+    <div>
+      <h1>Shuting Ding</h1>
+      <p>Visiting Scholar at University of Michigan, USA</p>
+      <p>
+        📍 <a href="https://umich.edu" target="_blank">Michigan USA</a><br>
+        ✉️ <a href="mailto:shutingdin@gmail.com">shutingdin@gmail.com</a><br>
+        🐦 <a href="https://x.com/ShutingDing" target="_blank">Twitter</a><br>
+        📚 <a href="https://scholar.google.com/citations?user=SIEl_I8AAAAJ" target="_blank">Google Scholar</a><br>
+        🧬 <a href="https://orcid.org/0000-0001-7541-3086" target="_blank">ORCID</a>
+      </p>
+    </div>
   </div>
 
+  <!-- About -->
   <div class="section" id="about">
     <h2>About Me</h2>
     <p>I am currently a visiting scholar at the University of Michigan, working in George Zhang’s lab. My research interests include sulfated peptides in plants and cell biology techniques like Coulter Counter analysis.</p>
   </div>
 
+  <!-- News -->
   <div class="section" id="news">
     <h2>News</h2>
     <ul>
@@ -53,11 +102,44 @@
     </ul>
   </div>
 
+  <!-- Publications -->
   <div class="section" id="publications">
-    <h2>Publications</h2>
-    <p>Coming soon. You can view my publications on <a href="https://scholar.google.com/citations?user=SIEl_I8AAAAJ" target="_blank">Google Scholar</a>.</p>
+    <h2>Featured Publication</h2>
+    <div class="paper">
+      <h3>Peptide Signaling and Cell Size Control in Arabidopsis</h3>
+      <p>This study explores how sulfated peptides modulate plant cell expansion using quantitative Coulter Counter analysis.</p>
+      <p><a href="#">Read the full article (DOI)</a></p>
+      <img src="paper1_figure.jpg" alt="Representative figure from publication">
+    </div>
+    <p>More publications available on <a href="https://scholar.google.com/citations?user=SIEl_I8AAAAJ" target="_blank">Google Scholar</a>.</p>
   </div>
 
+  <!-- 📸 Image Gallery -->
+  <div class="section" id="gallery">
+    <h2>Gallery</h2>
+    <p>A collection of natural scenery and insects captured during fieldwork and personal exploration.</p>
+    <div class="gallery">
+      <img src="nature1.jpg" alt="Nature Photo 1">
+      <img src="nature2.jpg" alt="Nature Photo 2">
+      <img src="insect1.jpg" alt="Insect Photo 1">
+      <img src="insect2.jpg" alt="Insect Photo 2">
+    </div>
+  </div>
+
+  <!-- 📝 Blog Section -->
+  <div class="section" id="blog">
+    <h2>Blog & Reflections</h2>
+    <p>In this blog column, I share reflections on plant signaling, research tips, and science communication.</p>
+    <div class="blog-list">
+      <ul>
+        <li><a href="#">[2025-03] How Sulfated Peptides Control Plant Growth (coming soon)</a></li>
+        <li><a href="#">[2024-11] Reflections on Research Life at UMich</a></li>
+        <li><a href="#">[2024-08] Fieldwork, Insects & Wonders</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Honors -->
   <div class="section" id="honors">
     <h2>Honors and Awards</h2>
     <ul>
@@ -66,6 +148,7 @@
     </ul>
   </div>
 
+  <!-- Education -->
   <div class="section" id="education">
     <h2>Education</h2>
     <ul>
