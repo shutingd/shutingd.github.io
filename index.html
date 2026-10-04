@@ -51,6 +51,86 @@
       margin-top: 10px;
       border: 1px solid #ccc;
     }
+    .paper-box {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .paper-box:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+    .paper-box-image {
+      flex: 0 0 220px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f7f8fa;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .paper-box-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .paper-box-text {
+      flex: 1;
+      min-width: 0;
+    }
+    .paper-box-text h4 {
+      margin: 0 0 6px;
+      font-size: 1.05em;
+      line-height: 1.4;
+    }
+    .paper-box-text h4 a {
+      color: #2c3e50;
+    }
+    .paper-box-text h4 a:hover {
+      color: #2980b9;
+    }
+    .paper-meta {
+      margin: 0 0 10px;
+      color: #666;
+      font-size: 0.92em;
+    }
+    .venue {
+      display: inline-block;
+      padding: 1px 8px;
+      margin-right: 6px;
+      background-color: #eaf2fb;
+      color: #2471a3;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    .paper-box-text ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #444;
+      font-size: 0.93em;
+    }
+    .paper-box-text li {
+      margin-bottom: 2px;
+    }
+    @media (max-width: 640px) {
+      .paper-box {
+        flex-direction: column;
+      }
+      .paper-box-image {
+        flex-basis: auto;
+        width: 100%;
+      }
+    }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -115,7 +195,7 @@
         MIDAS Postdoctoral Fellow，University of Michigan, USA</p>
       <p>
         ✉️ <a href="mailto:shutingdin@gmail.com">shutingdin@gmail.com</a><br>
-        🐦 <a href="[https://x.com/ShutingDing] target="_blank">Twitter</a><br>
+        🐦 <a href="https://x.com/ShutingDing" target="_blank" rel="noopener noreferrer">Twitter</a><br>
         📚 <a href="https://scholar.google.com/citations?user=SIEl_I8AAAAJ" target="_blank">Google Scholar</a><br>
         🧬 <a href="https://orcid.org/0000-0001-7541-3086" target="_blank" rel="noopener noreferrer">ORCID</a>
       </p>
@@ -180,7 +260,7 @@
 
   <div class="paper-box">
     <div class="paper-box-image">
-      <img src="image/EmboJ2024.jpg" alt="Tomato Signaling Figure" style="width: 100px; height: auto;">
+      <img src="image/EmboJ2024.jpg" alt="BRAK–PSKR1 signaling in tomato">
     </div>
     <div class="paper-box-text">
       <h4>
@@ -188,7 +268,7 @@
           A novel LRR receptor-like kinase BRAK reciprocally phosphorylates PSKR1 to enhance growth and defense in tomato
         </a>
       </h4>
-      <p><strong>The EMBO Journal</strong>, 2024. S Ding, S Feng, et al.</p>
+      <p class="paper-meta"><span class="venue">EMBO J 2024</span><strong>S Ding</strong>, S Feng, et al.</p>
       <ul>
         <li>BRAK phosphorylates PSKR1 to activate peptide signaling.</li>
         <li>Enhances both defense and growth under biotic stress.</li>
@@ -200,7 +280,7 @@
 
   <div class="paper-box">
     <div class="paper-box-image">
-      <img src="image/embo23.png" alt="PSK tomato" style="width: 100px; height: auto;">
+      <img src="image/embo23.png" alt="PSK–GS2 signaling in tomato">
     </div>
     <div class="paper-box-text">
       <h4>
@@ -208,7 +288,7 @@
           Phytosulfokine peptide optimizes plant growth and defense via glutamine synthetase GS2 phosphorylation in tomato
         </a>
       </h4>
-      <p><strong>The EMBO Journal</strong>, 2023. S Ding, J Lv, et al.</p>
+      <p class="paper-meta"><span class="venue">EMBO J 2023</span><strong>S Ding</strong>, J Lv, et al.</p>
       <ul>
         <li>PSK boosts GS2 activity through phosphorylation.</li>
         <li>Integrates nutrient status with immune signaling.</li>
