@@ -133,6 +133,46 @@
         max-height: 300px;
       }
     }
+    .research-list {
+      margin-top: 10px;
+    }
+    .research-item {
+      margin-bottom: 22px;
+    }
+    .research-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+    .research-icon {
+      flex: 0 0 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--tint);
+      color: var(--accent);
+    }
+    .research-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .research-item h3 {
+      margin: 0;
+      font-size: 1.1em;
+      color: #2c3e50;
+    }
+    .research-item p {
+      margin: 0;
+      color: #333;
+    }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -179,11 +219,9 @@
     <li><a href="#">Home</a></li>
     <li><a href="#about">About Me</a></li>
     <li><a href="#research">Research</a></li>
-    <li><a href="#news">News</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#honors">Honors</a></li>
     <li><a href="#publications">Publications</a></li>
-    <li><a href="#blog">Blog</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
@@ -194,7 +232,7 @@
     <div>
       <h1>Shuting Ding</h1>
       <p>
-        MIDAS Postdoctoral Fellow，University of Michigan, USA</p>
+        MIDAS Postdoctoral Fellow, University of Michigan, USA</p>
       <p>
         ✉️ <a href="mailto:shutingdin@gmail.com">shutingdin@gmail.com</a><br>
         🐦 <a href="https://x.com/ShutingDing" target="_blank" rel="noopener noreferrer">Twitter</a><br>
@@ -230,14 +268,43 @@
 
 <section id="research">
   <h2>Research</h2>
-  <h3>Peptide Signaling</h3>
-  <p>I study how <strong>small signaling peptides</strong> (such as phytosulfokine and systemin) act as messengers in tomato plants. These peptides are recognized by specific receptors (like PSKR1) to trigger downstream responses. My research has revealed that peptide hormones can optimize plant growth and activate defense pathways against pathogens by modulating cellular activities and gene expression.</p>
-  <h3>Stress Physiology</h3>
-  <p>Understanding how tomatoes cope with <strong>environmental stresses</strong> is a central theme of my work. I examine tomato responses to drought, high temperature, and pathogens at both physiological and molecular levels. By analyzing stress-responsive mutants and performing multi-omics studies, I aim to uncover how signaling components (peptides, G-proteins, hormones) help reprogram tomato physiology to survive adverse conditions.</p>
-  <h3>Metabolic Rewiring</h3>
-  <p>Stress and signaling often lead to changes in plant metabolism. I investigate how tomato plants <strong>rewire their metabolism</strong> under stress, such as accumulating defensive compounds (e.g., phenolamides) or altering primary metabolic pathways. This research helps identify metabolic markers of stress resilience and how manipulating signaling pathways can enhance those protective metabolic responses.</p>
-  <h3>CRISPR-Based Breeding</h3>
-  <p>I am also interested in applying <strong>CRISPR/Cas9 genome editing</strong> to tomato improvement. By precisely targeting genes involved in peptide and G-protein signaling, I work on creating tomato lines with enhanced stress tolerance and growth traits. This precision-breeding approach accelerates the development of tomato varieties better equipped to handle biotic and abiotic challenges.</p>
+  <div class="research-list">
+    <div class="research-item" style="--accent: #8e44ad; --tint: #f4ecf8;">
+      <div class="research-head">
+        <span class="research-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M10.8 7.3 6.2 16.7"/><path d="M13.2 7.3l4.6 9.4"/><path d="M7.5 19h9"/></svg></span>
+        <h3>AI &amp; Single-Cell Genomics</h3>
+      </div>
+      <p>I am now expanding my work from individual signaling pathways to genome-scale regulatory networks. As a MIDAS Postdoctoral Fellow, I combine large-scale single-cell data with artificial intelligence to investigate how plant gene regulatory systems reorganize across species, genotypes, and stress conditions.</p>
+    </div>
+    <div class="research-item" style="--accent: #2471a3; --tint: #eaf2fb;">
+      <div class="research-head">
+        <span class="research-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49"/><path d="M7.76 16.24a6 6 0 0 1 0-8.49"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 19.07a10 10 0 0 1 0-14.14"/></svg></span>
+        <h3>Peptide Signaling</h3>
+      </div>
+      <p>I study how small signaling peptides such as phytosulfokine and systemin act as messengers in tomato, and how receptors like PSKR1 decode them. My work shows that peptide hormones can optimize growth while activating defense against pathogens by reshaping cellular activity and gene expression.</p>
+    </div>
+    <div class="research-item" style="--accent: #c0392b; --tint: #fbeeed;">
+      <div class="research-head">
+        <span class="research-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></svg></span>
+        <h3>Stress Physiology</h3>
+      </div>
+      <p>I examine how tomato responds to drought, high temperature, and pathogens at physiological and molecular levels. Using stress-responsive mutants and multi-omics, I ask how peptides, G-proteins, and hormones reprogram plant physiology under adverse conditions.</p>
+    </div>
+    <div class="research-item" style="--accent: #d68910; --tint: #fdf4e6;">
+      <div class="research-head">
+        <span class="research-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2v7.5a2 2 0 0 1-.2.9L4.7 20.5a1 1 0 0 0 .9 1.5h12.8a1 1 0 0 0 .9-1.5l-5.1-10.1a2 2 0 0 1-.2-.9V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg></span>
+        <h3>Metabolic Rewiring</h3>
+      </div>
+      <p>Stress and signaling often reshape plant metabolism. I investigate how tomato rewires its metabolism, from primary pathways to defensive compounds such as phenolamides, to identify metabolic markers of stress resilience.</p>
+    </div>
+    <div class="research-item" style="--accent: #1e8449; --tint: #eaf6ef;">
+      <div class="research-head">
+        <span class="research-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg></span>
+        <h3>CRISPR-Based Breeding</h3>
+      </div>
+      <p>I apply CRISPR/Cas9 genome editing to precisely target genes in peptide and G-protein signaling, creating tomato lines with enhanced stress tolerance and growth for more resilient varieties.</p>
+    </div>
+  </div>
 </section>
 
 
