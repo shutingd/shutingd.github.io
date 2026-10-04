@@ -68,20 +68,16 @@
       transform: translateY(-2px);
     }
     .paper-box-image {
-      flex: 0 0 220px;
-      height: 180px;
+      flex: 0 0 280px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #f7f8fa;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      overflow: hidden;
     }
     .paper-box-image img {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 260px;
       object-fit: contain;
+      border-radius: 6px;
     }
     .paper-box-text {
       flex: 1;
@@ -129,6 +125,9 @@
       .paper-box-image {
         flex-basis: auto;
         width: 100%;
+      }
+      .paper-box-image img {
+        max-height: 300px;
       }
     }
     .gallery {
@@ -257,6 +256,25 @@
 
 <section id="publications">
   <h2>Selected Publications</h2>
+
+  <div class="paper-box">
+    <div class="paper-box-image">
+      <img src="image/SciAdv2026.png" alt="SNV mutation rate declines with growth rate across yeast strains and environments">
+    </div>
+    <div class="paper-box-text">
+      <h4>
+        <a href="https://doi.org/10.1126/sciadv.adj6957" target="_blank">
+          Spontaneous mutation rate and spectrum are modulated by organismal fitness
+        </a>
+      </h4>
+      <p class="paper-meta"><span class="venue">Sci Adv 2026</span><strong>S Ding</strong>, A Mahilkar, Y Li, J Zhang</p>
+      <ul>
+        <li>Mutation accumulation in 11 yeast strains across 3 environments (&gt;9,000 mutations).</li>
+        <li>Rates of all mutation types decline as organismal fitness increases.</li>
+        <li>Fitness also shapes the mutation spectrum, with implications for adaptation and genetic load.</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="paper-box">
     <div class="paper-box-image">
