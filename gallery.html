@@ -5,38 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shuting Ding - Gallery</title>
   <style>
-    /* 同上，复制相同的 CSS */
-    /* ... */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    nav li {
+      float: left;
+    }
+    nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav li a:hover {
+      background-color: #111;
+    }
+    nav li a.active {
+      background-color: #111;
+    }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery figure {
+      margin: 0;
     }
     .gallery img {
       width: 100%;
+      aspect-ratio: 4 / 3;
       border-radius: 8px;
-      border: 1px solid #ccc;
       object-fit: cover;
+      background-color: #eee;
+    }
+    .gallery figcaption {
+      margin-top: 6px;
+      color: #555;
+      font-size: 0.92em;
     }
   </style>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About Me</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#news">News</a></li>
+    <li><a href="index.html#education">Education</a></li>
+    <li><a href="index.html#honors">Honors</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="index.html#blog">Blog</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
     </ul>
   </nav>
+
   <h1>Gallery</h1>
-  <p>A collection of natural scenery and insects captured during fieldwork and personal exploration.</p>
+  <p>A glimpse into my research and fieldwork with tomato plants:</p>
+
   <div class="gallery">
-    <img src="nature1.jpg" alt="Nature Photo 1">
-    <img src="nature2.jpg" alt="Nature Photo 2">
-    <img src="insect1.jpg" alt="Insect Photo 1">
-    <img src="insect2.jpg" alt="Insect Photo 2">
+    <figure>
+      <img src="image/nature1.jpg" alt="Tomato field trial in progress">
+      <figcaption>Tomato field trial during the growing season.</figcaption>
+    </figure>
+    <figure>
+      <img src="image/nature2.jpg" alt="Tomato plants in greenhouse experiment">
+      <figcaption>Tomato plants in a controlled greenhouse experiment.</figcaption>
+    </figure>
+    <figure>
+      <img src="image/insect1.jpg" alt="Microscopic view of tomato leaf cells">
+      <figcaption>Microscopic view of tomato leaf cells (stomata and epidermis).</figcaption>
+    </figure>
+    <figure>
+      <img src="image/insect2.jpg" alt="Lab work with tomato samples">
+      <figcaption>In the lab: analyzing tomato tissue samples.</figcaption>
+    </figure>
   </div>
 </body>
 </html>

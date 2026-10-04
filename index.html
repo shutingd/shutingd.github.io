@@ -53,8 +53,8 @@
     }
     .paper-box {
       display: flex;
-      gap: 24px;
-      align-items: flex-start;
+      gap: 28px;
+      align-items: center;
       padding: 20px;
       margin-top: 20px;
       background-color: #fff;
@@ -68,16 +68,19 @@
       transform: translateY(-2px);
     }
     .paper-box-image {
-      flex: 0 0 280px;
+      flex: 0 0 300px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     .paper-box-image img {
       max-width: 100%;
-      max-height: 260px;
+      max-height: 250px;
       object-fit: contain;
       border-radius: 6px;
+    }
+    .paper-box-image img.img-sm {
+      max-height: 215px;
     }
     .paper-box-text {
       flex: 1;
@@ -181,7 +184,7 @@
     <li><a href="#honors">Honors</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#blog">Blog</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
 
@@ -259,7 +262,7 @@
 
   <div class="paper-box">
     <div class="paper-box-image">
-      <img src="image/SciAdv2026.png" alt="SNV mutation rate declines with growth rate across yeast strains and environments">
+      <img src="image/SciAdv2026.png" alt="Chromosome gain/loss rate declines with growth rate across yeast strains and environments">
     </div>
     <div class="paper-box-text">
       <h4>
@@ -278,7 +281,7 @@
 
   <div class="paper-box">
     <div class="paper-box-image">
-      <img src="image/EmboJ2024.jpg" alt="BRAK–PSKR1 signaling in tomato">
+      <img class="img-sm" src="image/EmboJ2024.jpg" alt="BRAK–PSKR1 signaling in tomato">
     </div>
     <div class="paper-box-text">
       <h4>
@@ -320,26 +323,6 @@
 
 
 
-<section id="gallery">
-  <h2>Gallery</h2>
-  <p>A glimpse into my research and fieldwork with tomato plants:</p>
-  <figure>
-    <img src="image/nature1.jpg" alt="Tomato field trial in progress">
-    <figcaption>Tomato field trial during the growing season.</figcaption>
-  </figure>
-  <figure>
-    <img src="image/nature2.jpg" alt="Tomato plants in greenhouse experiment">
-    <figcaption>Tomato plants in a controlled greenhouse experiment.</figcaption>
-  </figure>
-  <figure>
-    <img src="image/insect1.jpg" alt="Microscopic view of tomato leaf cells">
-    <figcaption>Microscopic view of tomato leaf cells (stomata and epidermis).</figcaption>
-  </figure>
-  <figure>
-    <img src="image/insect2.jpg" alt="Lab work with tomato samples">
-    <figcaption>In the lab: analyzing tomato tissue samples.</figcaption>
-  </figure>
-</section>
 
 </body>
 </html>
